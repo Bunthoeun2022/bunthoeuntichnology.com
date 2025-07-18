@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>គេហទំព័រព័ត៌មានបច្ចេកវិទ្យា</title>
+    <!-- ការប្រើប្រាស់ Tailwind CSS សម្រាប់ធ្វើឲ្យគេហទំព័រស្អាត និង Responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- ការប្រើប្រាស់ Font ខ្មែរ 'Kantumruy Pro' ពី Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- ផ្ទៃខាងក្រោយថ្មីសម្រាប់រូបមន្តគណិតវិទ្យា -->
+    <div id="math-background"></div>
+
+    <!-- បឋមកថា (Header) -->
+    <header class="bg-slate-900/80 backdrop-blur-md shadow-lg sticky top-0 z-20 flex-shrink-0">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-3xl font-bold text-white py-4">ផែនទីឌីជីថល</h1>
+                </div>
+                <nav>
+                    <ul class="flex items-center space-x-2 md:space-x-6">
+                        <li><a href="#home" class="nav-link text-slate-300 hover:text-sky-400 transition-colors duration-300 py-5 px-2">ទំព័រដើម</a></li>
+                        <li><a href="#ai-news" class="nav-link text-slate-300 hover:text-sky-400 transition-colors duration-300 py-5 px-2">បច្ចេកវិទ្យា</a></li>
+                        <li><a href="#reviews" class="nav-link text-slate-300 hover:text-sky-400 transition-colors duration-300 py-5 px-2">ផែនទីឌីជីថល</a></li>
+                        <li><a href="#documents" class="nav-link text-slate-300 hover:text-sky-400 transition-colors duration-300 py-5 px-2">ឯកសារ</a></li>
+                        <li><a href="#resume" class="nav-link text-slate-300 hover:text-sky-400 transition-colors duration-300 py-5 px-2">ប្រវត្តិរូបសង្ខេប</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- មាតិកាចម្បង (Main Content) -->
+    <main class="flex-grow z-10">
+        
+        <!-- ផ្ទាំងទី១៖ ទំព័រដើម (វីដេអូ) -->
+        <div id="home" class="page-content">
+            <section class="container mx-auto px-6 py-8 flex flex-col flex-grow">
+                <article class="bg-slate-800/80 backdrop-blur-sm p-6 rounded-lg shadow-xl border border-slate-700 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold mb-3 text-white">របៀបកំណត់ឱ្យត្រូវចំណុចយាមកាក្នុងកម្មវិធី ArcMap || Georeferencing in ArcMap</h2>
+                    <div class="relative w-full flex-grow rounded-lg overflow-hidden mb-4">
+                        <iframe src="/hd2.jpg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe>
+                    </div>
+                    <p class="text-slate-300 mb-4">វីដេអូនេះនឹងបង្ហាញលម្អិតអំពីលក្ខណៈសម្បត្តិថ្មីៗរបស់ iPhone 16 Pro Max។</p>
+                    <a href="https://www.youtube.com/watch?v=EAFXa_M4rDA&t=143s&ab_channel=RoatBunthoeun%28Technology%29" class="content-link inline-block mt-2 text-sky-400 hover:text-sky-300" data-content-id="video-iphone">មើលវីដេអូពេញ...</a>
+                </article>
+            </section>
+        </div>
+
+        <!-- ផ្ទាំងទី២៖ ព័ត៌មាន AI (មាន Slider) -->
+        <div id="ai-news" class="page-content">
+            <section class="container mx-auto px-6 py-8 flex flex-col flex-grow">
+                <article id="ai-news-content" class="bg-slate-800/80 backdrop-blur-sm p-6 rounded-lg shadow-xl border border-slate-700 flex flex-col flex-grow">
+                    <h2 id="ai-news-title" class="text-2xl font-bold mb-3 text-white"></h2>
+                    <div class="relative w-full flex-grow rounded-lg overflow-hidden mb-4">
+                        <img id="ai-news-image" src="" alt="រូបភាពតំណាងបច្ចេកវិទ្យា AI" class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                    <p id="ai-news-description" class="text-slate-300 mb-4"></p>
+                    <a id="ai-news-link" href="/hd2.jpg" class="content-link inline-block mt-2 text-sky-400 hover:text-sky-300">អានបន្ត...</a>
+                </article>
+            </section>
+        </div>
+        
+        <!-- ផ្ទាំងទី៣៖ รีวิวផលិតផល -->
+        <div id="reviews" class="page-content">
+            <section class="container mx-auto px-6 py-8 flex flex-col flex-grow">
+                <article class="bg-slate-800/80 backdrop-blur-sm p-6 rounded-lg shadow-xl border border-slate-700 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold mb-3 text-white">រូបភាពបច្ចេកវិទ្យាក្នុងឆ្នាំ 2025</h2>
+                    <div class="relative w-full flex-grow rounded-lg overflow-hidden mb-4">
+                        <img src="/1.jpg" alt="រូបភាព Laptop" class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                    <p class="text-slate-300 mb-4">ស្វែងយល់ពីបច្ចេកវិទ្យាដែលមានគុណភាពខ្ពស់ និងតម្លៃសមរម្យ។</p>
+                    <a href="#" class="content-link inline-block mt-2 text-sky-400 hover:text-sky-300" data-content-id="review-laptop">អានពេញ...</a>
+                </article>
+            </section>
+        </div>
+
+        <!-- ផ្ទាំងទី៥៖ ឯកសារ (បានកែប្រែ Layout) -->
+        <div id="documents" class="page-content">
+            <section class="container mx-auto px-6 py-8 flex flex-col flex-grow">
+                <div class="w-full mx-auto">
+                    <h2 class="text-3xl font-bold mb-8 text-white text-center">Documents</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Card 1: PDF -->
+                        <a href="#" class="content-link bg-slate-800/80 p-6 rounded-lg flex flex-col items-center justify-center text-center border border-slate-700 shadow-xl hover:bg-slate-700/60 transition-colors duration-300" data-content-id="doc-pdf">
+                            <svg class="w-20 h-20 mb-4 text-red-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                            </svg>
+                            <h3 class="text-xl font-bold text-white">របាយការណ៍ប្រចាំឆ្នាំ</h3>
+                            <p class="text-slate-400 mt-2">ប្រភេទឯកសារ: PDF</p>
+                        </a>
+                        <!-- Card 2: PowerPoint -->
+                        <a href="#" class="content-link bg-slate-800/80 p-6 rounded-lg flex flex-col items-center justify-center text-center border border-slate-700 shadow-xl hover:bg-slate-700/60 transition-colors duration-300" data-content-id="doc-ppt">
+                            <svg class="w-20 h-20 mb-4 text-orange-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-1.621-.87a3 3 0 01-.879-2.122v-1.007m-5.13-7.525a3.375 3.375 0 016.26 0m-6.26 0a3.375 3.375 0 00-6.26 0m12.52 0a3.375 3.375 0 01-6.26 0M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+                            </svg>
+                            <h3 class="text-xl font-bold text-white">បទបង្ហាញ៖ អនាគត 5G</h3>
+                            <p class="text-slate-400 mt-2">ប្រភេទឯកសារ: PowerPoint</p>
+                        </a>
+                        <!-- Card 3: Word -->
+                        <a href="#" class="content-link bg-slate-800/80 p-6 rounded-lg flex flex-col items-center justify-center text-center border border-slate-700 shadow-xl hover:bg-slate-700/60 transition-colors duration-300" data-content-id="doc-word">
+                            <svg class="w-20 h-20 mb-4 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                            </svg>
+                            <h3 class="text-xl font-bold text-white">Cloud Computing</h3>
+                            <p class="text-slate-400 mt-2">ប្រភេទឯកសារ: Word</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ផ្ទាំងទី៤៖ ប្រវត្តិរូបសង្ខេប -->
+        <div id="resume" class="page-content">
+            <section class="container mx-auto px-6 py-8 flex flex-col flex-grow">
+                <div class="w-full mx-auto flex flex-col flex-grow">
+                    <div class="bg-slate-800/80 backdrop-blur-sm p-6 md:p-8 rounded-lg shadow-xl border border-slate-700 flex-grow overflow-y-auto">
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                            <!-- Left Column -->
+                            <div class="lg:col-span-1 space-y-8">
+                                <div class="flex justify-center">
+                                    <img src="/Logo.png" alt="រូបថតប្រវត្តិរូប" class="w-40.1 h-40.1 rounded-full border-4 border-slate-600">
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white border-b-2 border-slate-700 pb-2 mb-4">ព័ត៌មានទំនាក់ទំនង</h3>
+                                    <div class="space-y-2 text-slate-300">
+                                        <p><strong>អ៊ីមែល:</strong> bunthoeunroat@email.com</p>
+                                        <p><strong>លេខទូរស័ព្ទ:</strong> 096 976 2168</p>
+                                        <p><strong>អាសយដ្ឋាន:</strong> Phnom Penh, Cambodia</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- Right Column -->
+                            <div class="lg:col-span-2 space-y-8">
+                                <div>
+                                    <h2 class="text-5xl font-bold text-white">រ័ត្ន ប៊ុនធឿន</h2>
+                                    <!--<p class="text-2xl text-sky-400 mt-2">អ្នកអភិវឌ្ឍន៍គេហទំព័រ (Full-Stack Developer)</p>-->
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white border-b-2 border-slate-700 pb-2 mb-4">ការអប់រំ និងបទពិសោធន៍ការងារ</h3>
+                                    <div class="mb-4">
+                                        <h4 class="text-xl font-semibold text-sky-400">ចុះបេសកកម្មតាមព្រំដែន កម្ពុជា-ថៃ | 2025 - បច្ចុប្បន្ន</h4>
+                                        <ul class="list-disc list-inside text-slate-300 mt-2 space-y-1">
+                                            <li>នាយកដ្ឋានភូមិសាស្រ្ត ក្រសួងការពារជាតិ | 2022 - 2025</li>
+                                            <li>សាកលវិទ្យាល័យបណ្ឌិតយោធាទីក្រុងហាណូយ | 2016 - 2022</li>
+                                            <li>សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ | 2012 - 2016</li>
+                                            <li>វិទ្យាល័យភ្ញីមាស | 2010 - 2012</li>
+                                            <li>អនុវិទ្យាល័យសំរោងពន្លែ | 2007 - 2010</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white border-b-2 border-slate-700 pb-2 mb-4">សញ្ញាបត្រកំុព្យូទ័រ</h3>
+                                    <div>
+                                        <p class="text-slate-400">សាកលវិទ្យាល័យបណ្ឌិតយោធាទីក្រុងហាណូយ(IT) | 2016 - 2022</p>
+                                    </div>
+                                </div>
+                                <h3 class="text-2xl font-bold text-white border-b-2 border-slate-700 pb-2 mb-4">ជំនាញបច្ចេកទេស</h3>
+                                <div class="flex flex-wrap gap-2">
+                                        <span class="bg-slate-700 text-sky-300 px-3 py-1 rounded-full text-sm">ArcGIS</span>
+                                        <span class="bg-slate-700 text-sky-300 px-3 py-1 rounded-full text-sm">ArcGIS Pro</span>
+                                        <span class="bg-slate-700 text-sky-300 px-3 py-1 rounded-full text-sm">Erdas</span>
+                                        <span class="bg-slate-700 text-sky-300 px-3 py-1 rounded-full text-sm">GeoSerVer</span>
+                                        <span class="bg-slate-700 text-sky-300 px-3 py-1 rounded-full text-sm">VisualCode</span>
+                                        <span class="bg-slate-700 text-sky-300 px-3 py-1 rounded-full text-sm">គណិតវិទ្យាកំរិតខ្ពស់</span>
+                                        <span class="bg-slate-700 text-sky-300 px-3 py-1 rounded-full text-sm">Ustation</span>
+                                        <span class="bg-slate-700 text-sky-300 px-3 py-1 rounded-full text-sm">Tichnogy...</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- ទំព័រក្រោម (Footer) -->
+    <footer class="bg-slate-900 mt-auto flex-shrink-0 z-10">
+        <div class="container mx-auto px-6 py-4 text-center text-slate-400">
+            <p>&copy; 2025 ផែនទីឌីជីថល រក្សាសិទ្ធិគ្រប់យ៉ាង</p>
+        </div>
+    </footer>
+
+    <!-- Modal សម្រាប់បង្ហាញមាតិកាពេញ -->
+    <div id="content-modal" class="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm hidden items-center justify-center z-50 p-4 transition-opacity duration-300">
+        <div id="modal-content-box" class="bg-slate-800/90 max-w-4xl w-full max-h-[90vh] rounded-lg shadow-xl border border-slate-700 flex flex-col">
+            <div class="p-4 border-b border-slate-700 flex justify-between items-center flex-shrink-0">
+                <h2 id="modal-title" class="text-2xl font-bold text-white"></h2>
+                <button id="modal-close-btn" class="text-slate-400 hover:text-white text-4xl leading-none">&times;</button>
+            </div>
+            <div id="modal-body" class="p-6 overflow-y-auto flex-grow">
+                <!-- Content will be injected here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
